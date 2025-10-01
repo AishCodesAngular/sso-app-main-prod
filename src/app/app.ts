@@ -43,7 +43,7 @@ ngOnInit() {
 }
 
 handleMessage = (event: MessageEvent) => {
-  const expectedPath = '/sso-app-sub/';
+  const expectedPath = '/sso-app-sub-prod/';
   if (event.origin + expectedPath  !== 'https://AishCodesAngular.github.io/sso-app-sub-prod/') return;
   console.log('Message received in App1:', event.data);
   this.message.set(event.data);
