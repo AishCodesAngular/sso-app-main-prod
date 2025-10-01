@@ -10,7 +10,7 @@ import { SharedService } from './services/shared-service';
   styleUrl: './app.scss'
 })
 export class AppComponent {
-  private app2Url = 'https://AishCodesAngular.github.io/sso-app-sub-prod/';
+  private app2Url = 'https://aishcodesangular.github.io/sso-app-sub-prod/';
   private app2Window: Window | null = null;
   message = signal<any>('Waiting for message... from App2');
   counter = signal<number>(0)
@@ -44,7 +44,7 @@ ngOnInit() {
 
 handleMessage = (event: MessageEvent) => {
   const expectedPath = '/sso-app-sub-prod/';
-  if (event.origin + expectedPath  !== 'https://AishCodesAngular.github.io/sso-app-sub-prod/') return;
+  if (event.origin + expectedPath  !== 'https://aishcodesangular.github.io/sso-app-sub-prod/') return;
   console.log('Message received in App1:', event.data);
   this.message.set(event.data);
   this.conterHandler(event.data.process);
