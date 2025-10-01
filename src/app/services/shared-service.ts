@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SharedService {
-    private app2Url = 'http://localhost:4201';
+    private app2Url = 'https://aishcodesangular.github.io/sso-app-main-sub/';
     public app2Window: Window | null = null;
   
     openApp2() {
